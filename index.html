@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Main Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('/home/naveen/Desktop/Station video wall/Wall-Dashboard/Battery/Image1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: rgba(217, 235, 244, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #da4321;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 30px;
+            color: #000101;
+            text-align: center;
+            text-decoration: none;
+        }
+        .card:nth-child(1) { background-color: #ceef6d; }
+        .card:nth-child(2) { background-color: #4e9506; }
+        .card:nth-child(3) { background-color: #ed8c42; }
+        .card:nth-child(4) { background-color: #079ddd; }
+        .card:nth-child(5) { background-color: #ffd966; }
+        .card:nth-child(6) { background-color: #b6b8b9; }
+        .card:nth-child(7) { background-color: #d78787; }
+        .card:nth-child(8) { background-color: #f02828; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Main Dashboard</h2>  
+    </div>
+    <div class="dashboard">
+        <a href="/Battery/Battery deployed.html" class="card">Total Field deployed Batteries (55000 / 100%)</a>
+        <a href="/Battery/Battery TIU connectivity.html.html" class="card">Batattery in swap but not communicating (30000 / 55%)</a>
+        <a href="/Battery/Qurantined Battery details.html " class="card">Quarantined Battery details (250 / 0.4%)</a>
+        <a href="/Battery/Battery Upgradation.html " class="card">Pending BP firmware Upgradation SCU (6000 / 11%)</a>
+        <a href="/Battery/Battery Upgradation.html " class="card">Pending TIU firmware Upgradation TIU (6000 / 11%)</a>
+        <a href="/Battery/Alert monitoring.html " class="card">Alert Monitoring super critical Alerts</a>
+        <a href="/Battery/Battery Unlock.html" class="card">Battery Unlock(Struck)</a>
+        <a href="/Battery/battery not in swap.html " class="card">Battery Not in Swap (7500 / 13%)</a>
+        <a href="/Battery/Battery reports.html " class="card">Battery Reports (7500 / 13%)</a>
+    </div>
+</body>
+</html>
